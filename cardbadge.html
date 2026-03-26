@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Course Card with Rotated Badge</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+
+    <div class="relative w-80 bg-white rounded-xl shadow-xl overflow-hidden       
+              transform transition duration-500 hover:rotate-360 hover:scale-105">
+
+
+        <div class="absolute top-4 -left-10 bg-red-500 text-white text-xs font-bold  md:bg-blue-600 lg:bg-red-600
+             px-12 py-1 transform -rotate-45 shadow-lg tracking-wide">
+            NEW
+        </div>
+
+
+        <div class="h-40 bg-gradient-to-br from-blue-600 to-cyan-400 ">
+            <img src="03-original.webp" alt="Course Image" class="w-full h-full object-cover" />
+        </div>
+
+
+        <div class="p-5">
+            <h2 class="text-xl font-bold text-gray-900">Figma UI Design Basics</h2>
+
+            <p class="text-gray-600 text-sm mt-2 hidden md:">
+                Learn how to design modern interfaces using Figma, components, and auto layout.
+            </p>
+
+
+            <div class="mt-4 flex justify-center items-center">
+                <button
+                    class="bg-blue-600  text-white px-4 py-2 text-xs font-semibold rounded-full hover:bg-blue-700 transition">
+                    View Course
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

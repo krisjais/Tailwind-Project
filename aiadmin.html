@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiptrack Dashboard</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex text-gray-800">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gray-900 text-gray-300 flex flex-col justify-between h-screen fixed">
+    <div>
+      <div class="p-6 flex items-center space-x-2">
+        <div class="bg-blue-500 rounded-lg p-2">
+          <span class="text-white font-bold text-lg">S</span>
+        </div>
+        <h1 class="text-white font-semibold text-lg">Shiptrack</h1>
+      </div>
+      <nav class="mt-4 space-y-1">
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Dashboard</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Shipments</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Orders</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Clients</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Fleet Management</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Warehousing</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Reports & Analytics</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Billing & Payments</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Security</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Preferences</p>
+      </nav>
+    </div>
+
+    <div class="border-t border-gray-700 mt-4">
+      <nav class="space-y-1">
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Settings</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">User Management</p>
+        <p class="px-6 py-2 hover:bg-gray-800 rounded cursor-pointer">Help & Support</p>
+      </nav>
+
+      <div class="flex items-center p-4 space-x-3 border-t border-gray-700 mt-2">
+        <img src="d1fbe448e2f118f4108ed6fed7e03e9b.jpg" alt="User" class="h-10 w-10 rounded-full">
+        <div>
+          <h1 class="text-white font-medium text-sm">Denzel Washington</h1>
+          <p class="text-gray-400 text-xs">Admin</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 w-full p-6">
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-semibold text-gray-800">Dashboard</h1>
+      <input type="text" placeholder="Search..." class="border border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring focus:ring-blue-300">
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-4 gap-6 mb-8">
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-gray-500">Total Shipments</p>
+        <h2 class="text-3xl font-bold mt-2">500</h2>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-gray-500">Pending Orders</p>
+        <h2 class="text-3xl font-bold mt-2">15</h2>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-gray-500">Revenue</p>
+        <h2 class="text-3xl font-bold mt-2">$50,000</h2>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-gray-500">Total Clients</p>
+        <h2 class="text-3xl font-bold mt-2">120</h2>
+      </div>
+    </div>
+
+    <!-- Client Activity -->
+    <div class="bg-white rounded-xl shadow p-6 mb-8">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Client Activity</h2>
+        <p class="text-sm text-gray-500">5 New clients this week · 12 New clients this month</p>
+      </div>
+
+      <table class="w-full text-left text-sm">
+        <thead class="border-b">
+          <tr>
+            <th class="py-2">Client ID</th>
+            <th>Client Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Sign-up Date</th>
+            <th>Account Type</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#001</td><td>Leslie Alexander</td><td>leslie@acme.com</td><td>(201) 555-0124</td><td>2023-09-14</td><td>Regular</td><td class="text-green-600">Active</td>
+            <td><button class="text-blue-500">Edit</button></td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#002</td><td>Ronald Richards</td><td>ronald@summit.com</td><td>(907) 555-0101</td><td>2023-09-14</td><td>Premium</td><td class="text-yellow-600">Pending</td>
+            <td><button class="text-blue-500">Edit</button></td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#003</td><td>Brooklyn Simmons</td><td>brooklyn@brightstar.com</td><td>(209) 555-0104</td><td>2023-09-13</td><td>Regular</td><td class="text-yellow-600">Pending</td>
+            <td><button class="text-blue-500">Edit</button></td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#004</td><td>Cameron Williamson</td><td>cameron@zenith.com</td><td>(207) 555-0110</td><td>2023-09-12</td><td>Premium</td><td class="text-green-600">Active</td>
+            <td><button class="text-blue-500">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Fleet Status -->
+    <div class="bg-white rounded-xl shadow p-6">
+      <h2 class="text-lg font-semibold mb-4">Fleet Status</h2>
+      <table class="w-full text-left text-sm">
+        <thead class="border-b">
+          <tr>
+            <th class="py-2">Vehicle ID</th>
+            <th>Vehicle Type</th>
+            <th>Current Location</th>
+            <th>Last Maintenance</th>
+            <th>Status</th>
+            <th>Distance (miles)</th>
+            <th>Fuel Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#V001</td><td>Truck</td><td>Warehouse A</td><td>2023-09-14</td><td class="text-green-600">In Service</td><td>3,500</td><td>85%</td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#V002</td><td>Van</td><td>Route 1</td><td>2023-09-14</td><td class="text-yellow-600">En Route</td><td>1,200</td><td>70%</td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#V003</td><td>Truck</td><td>Warehouse B</td><td>2023-09-13</td><td class="text-green-600">In Service</td><td>4,000</td><td>90%</td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td>#V004</td><td>Ship</td><td>Port 2</td><td>2023-09-12</td><td class="text-red-600">Out of Service</td><td>–</td><td>–</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+</html>

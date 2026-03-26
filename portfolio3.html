@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishesh Jaiswar | Full Stack Engineer (MERN)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: { 500: '#6366f1', 600: '#4f46e5' },
+                        slate: { 950: '#020617' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: 0.8s all ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .hero-shape { clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+        .glow-indigo:hover { box-shadow: 0 0 40px rgba(99, 102, 241, 0.3); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500 overflow-x-hidden">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b dark:border-slate-800 py-4 px-6 md:px-20 flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter text-indigo-500 uppercase">Vishesh<span class="text-slate-400">.DEV</span></div>
+        <div class="flex items-center gap-8">
+            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest">
+                <a href="#skills" class="hover:text-indigo-500 transition-colors">Expertise</a>
+                <a href="#projects" class="hover:text-indigo-500 transition-colors">Solutions</a>
+                <a href="#contact" class="hover:text-indigo-500 transition-colors">Contact</a>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full bg-slate-200 dark:bg-slate-900 text-indigo-500 transition-transform active:scale-90">
+                <i id="theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 md:px-20 pt-32 pb-20 gap-16">
+        <div class="max-w-3xl order-2 lg:order-1">
+            <div class="reveal active inline-block px-4 py-1 rounded-full bg-indigo-500/10 text-indigo-500 text-xs font-bold tracking-widest uppercase mb-6">
+                Open to Full-Stack Opportunities
+            </div>
+            <h1 class="reveal active text-5xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
+                Building <br/> <span class="text-indigo-500 italic">Scale.</span>
+            </h1>
+            <p class="reveal active text-xl text-slate-500 dark:text-slate-400 max-w-xl leading-relaxed mb-10">
+                Hi, I'm **Vishesh Jaiswar**. I build high-performance web applications using the **MERN Stack**. I specialize in turning complex requirements into clean, production-ready code.
+            </p>
+            <div class="reveal active flex flex-wrap gap-5">
+                <a href="#contact" class="px-10 py-5 bg-indigo-600 text-white font-bold rounded-full glow-indigo transition-all">Get In Touch</a>
+                <div class="flex items-center gap-6 px-6">
+                    <a href="https://github.com/yourusername" target="_blank" class="text-2xl hover:text-indigo-500 transition-colors"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-2xl hover:text-indigo-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="text-2xl hover:text-indigo-500 transition-colors"><i class="fa-brands fa-figma"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative w-full max-w-sm lg:max-w-md order-1 lg:order-2 reveal active">
+            <div class="absolute inset-0 bg-indigo-600/20 hero-shape scale-105 rotate-3"></div>
+            <div class="relative bg-slate-200 dark:bg-slate-800 hero-shape overflow-hidden border-2 border-indigo-500/50 shadow-2xl">
+                <img src="your-photo.jpg" alt="Vishesh Jaiswar" class="w-full h-full object-cover min-h-[450px] grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 md:px-20 bg-white dark:bg-slate-900/30 border-y dark:border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.3em] mb-4">Technical Proficiency</h2>
+                <h3 class="text-4xl font-extrabold tracking-tighter">My <span class="text-indigo-500 italic">Skill Matrix.</span></h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reveal glass p-8 rounded-3xl border-indigo-500/10 hover:border-indigo-500/40 transition-all">
+                    <h4 class="text-lg font-bold mb-6 flex items-center gap-3 text-cyan-500">
+                        <i class="fa-solid fa-code"></i> Frontend
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">React / Hooks</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Expert</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">JavaScript (ES6+)</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Advanced</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Tailwind CSS</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">95%</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Responsive UI</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Mobile-First</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="reveal glass p-8 rounded-3xl border-indigo-500/10 hover:border-indigo-500/40 transition-all">
+                    <h4 class="text-lg font-bold mb-6 flex items-center gap-3 text-green-500">
+                        <i class="fa-solid fa-server"></i> Backend
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Node.js / Express</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Proficient</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">MongoDB / Atlas</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">NoSQL</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">RESTful API Design</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Architect</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">JWT / Auth Systems</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Secure</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="reveal glass p-8 rounded-3xl border-indigo-500/10 hover:border-indigo-500/40 transition-all">
+                    <h4 class="text-lg font-bold mb-6 flex items-center gap-3 text-orange-500">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Workflow
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Git / GitHub</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">VC</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Postman</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Testing</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Vercel / Render</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Deploy</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm">
+                            <span class="opacity-80">Clean Code (SOLID)</span>
+                            <span class="bg-indigo-500/10 px-2 py-1 rounded text-[10px] font-mono">Principle</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 md:px-20">
+        <h2 class="reveal text-center text-4xl font-extrabold mb-16 tracking-tighter">Impactful <span class="text-indigo-500 italic">Work.</span></h2>
+        
+        <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+            <div class="reveal glass p-10 rounded-[2.5rem] border border-transparent hover:border-indigo-500/30 transition-all">
+                <div class="flex justify-between items-center mb-8 text-indigo-500 text-3xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-github text-xl"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-solid fa-arrow-up-right-from-square text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">MERN Auth Pro</h3>
+                <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+                    Designed a secure authentication microservice featuring JWT tokens, role-based access control, and password encryption. Focused on security benchmarks.
+                </p>
+                <div class="flex gap-4 font-mono text-[10px] uppercase text-indigo-500 font-bold mb-4">
+                    <span>#Node.js</span> <span>#JWT</span> <span>#MongoDB</span>
+                </div>
+                <div class="pt-6 border-t dark:border-slate-800 text-xs text-slate-400 italic">
+                    Focus: Security & Data Integrity
+                </div>
+            </div>
+
+            <div class="reveal glass p-10 rounded-[2.5rem] border border-transparent hover:border-indigo-500/30 transition-all">
+                <div class="flex justify-between items-center mb-8 text-indigo-500 text-3xl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-github text-xl"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-solid fa-arrow-up-right-from-square text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Performance Storefront</h3>
+                <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+                    Building a mobile-first E-commerce UI using Atomic Design principles. Optimized for 100% responsive accuracy and high SEO performance.
+                </p>
+                <div class="flex gap-4 font-mono text-[10px] uppercase text-indigo-500 font-bold mb-4">
+                    <span>#React</span> <span>#Tailwind</span> <span>#UX_UI</span>
+                </div>
+                <div class="pt-6 border-t dark:border-slate-800 text-xs text-slate-400 italic">
+                    Focus: UX & Lighthouse Scores
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white dark:bg-slate-950 border-t dark:border-slate-900 pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2 reveal">
+                    <div class="text-3xl font-extrabold tracking-tighter text-indigo-500 mb-6 uppercase">Vishesh<span class="text-slate-400">.JS</span></div>
+                    <p class="text-slate-500 dark:text-slate-400 max-w-sm mb-8">
+                        Designing and developing high-performance web applications with a focus on clean code and modern architecture. Available for global opportunities.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="mailto:your@email.com" class="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-brands fa-figma"></i></a>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-indigo-500">Navigation</h4>
+                    <ul class="space-y-4 text-sm font-semibold">
+                        <li><a href="#" class="hover:text-indigo-500 transition-colors">Top</a></li>
+                        <li><a href="#skills" class="hover:text-indigo-500 transition-colors">Skills Matrix</a></li>
+                        <li><a href="#projects" class="hover:text-indigo-500 transition-colors">Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="reveal">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-indigo-500">Contact</h4>
+                    <p class="text-sm text-slate-500 mb-6">vishesh@email.com</p>
+                    <a href="mailto:your@email.com" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-full hover:scale-105 transition-transform">SAY HELLO</a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+                <p>© 2026 Vishesh Jaiswar</p>
+                <div class="flex gap-8">
+                    <span>Clean Code</span>
+                    <span>Scalable Systems</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            themeIcon.classList.replace(isDark ? 'fa-moon' : 'fa-sun', isDark ? 'fa-sun' : 'fa-moon');
+            localStorage.theme = isDark ? 'dark' : 'light';
+        });
+
+        // Scroll Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

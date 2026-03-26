@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-indigo-200 w-full min-h-screen p-5"> 
+        <div class="bg-indigo-700 w-full min-h-[94vh] rounded-2xl">
+            <div class="text-3xl font-bold text-white text-center p-5 tracking-wider">
+                <h1>
+                    Hello Vishesh!
+                </h1>
+               <div id="Day">
+                
+               </div>
+
+
+                <div class="flex gap-10 text-7xl justify-center mt-10 text-indigo-900 font-semibold">
+                    <div id="Hours" class="bg-indigo-200 rounded-lg ">
+                        00
+                    </div>
+                    <div id="Minutes" class="bg-indigo-200 rounded-lg ">
+                        00
+                    </div>
+                    <div id="Seconds" class="bg-indigo-200 rounded-lg ">
+                        00
+                    </div>
+                    <div id="MiliSeconds" class="bg-indigo-200 rounded-lg ">
+                        00
+                    </div>
+
+
+                </div>
+
+                <div class="text-xl flex gap-7 justify-center font-medium text-white text-center p-5 tracking-wider ">
+                    <div>
+                        Hours
+                    </div>
+                    <div>
+                        Minutes
+                    </div>
+                    <div>
+                        Seconds
+                    </div>
+                     <div>
+                       mili Seconds
+                    </div>
+                </div>
+
+
+                <script>
+
+                    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    
+
+                    const Hours = document.getElementById("Hours");
+                    const Minutes = document.getElementById("Minutes");
+                    const Seconds = document.getElementById("Seconds");
+                    const MiliSeconds = document.getElementById("MiliSeconds");
+                    
+                    const Day = document.getElementById("Day");
+
+                    function updatehours() {
+                        Hours.innerHTML = new Date().getHours();
+
+                    }
+
+                    function updateMinutes() {
+                        Minutes.innerHTML = new Date().getMinutes();
+                    }
+
+                    function updateSeconds() {
+                        Seconds.innerHTML = new Date().getSeconds();
+                    }
+
+                    function updatedate() {
+                        Day.innerHTML = days[new Date().getDay()];
+
+                    }
+
+                  
+                   
+
+                    function updateClock() {
+                        updatehours();
+                        updateMinutes();
+                        updateSeconds();
+                        updatedate();
+                        updateMiliSeconds();
+
+                    }
+                    setInterval(updateClock, 1000)
+
+
+                    function updateMiliSeconds() {
+                        MiliSeconds.innerHTML = new Date().getMilliseconds();
+                    }
+                    setInterval(updateMiliSeconds, 1);
+ 
+
+                    for(let index = 0; index<days.length; index++){
+                        console.log(index)
+                    }
+
+                    for (let index = days.lenght - 1; index >= 0; index--) {
+                        console.log(index)
+                    }
+                </script>
+
+</body>
+
+</html>

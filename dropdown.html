@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./dropdown.js" defer></script>
+</head>
+
+<body>
+    <nav class="w-full bg-purple-900 flex justify-between items-center p-4 text-white">
+        <div class="text-2xl font-bold">
+            Logo
+        </div>
+        <div class=" gap-5 hidden md:flex font-medium ">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <!-- Menu  -->
+
+        <div id="menu-btn" class="block md:hidden ">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="menu" class="w-full shadow text-x1 flex flex-col p-4 gap-5 items-center md:hidden hidden">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact us</a>
+    </div>
+</body>
+
+</html>
